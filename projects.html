@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyARxs_0QWBQzZ-7tnFIkcz6Tzh5Fr1I0xg"></script>
+        <script src="./script.js"></script>
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a class="active" href="projects.html">Projects</a>
+          </div>
+
+          <div class="container">
+            <h2>My Projects</h2>
+            <br>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#RTBT">Real Time Bus Tracker</a></li>
+              <li><a href="#EME">Eye Movement Exercise</a></li>
+              <li><a href="#PME">Pacman Exercise</a></li>
+            </ul>
+          
+            <div class="tab-content">
+              <div id="RTBT" class="tab-pane fade in active">
+                <h3>Real Time Bus Tracker</h3>
+                <p>The real time bus tracker is a tracker that utilises an api provided by the city of Boston and google maps provided by Google. 
+                  What the tracker does is track every public bus in downtown Boston. 
+                  The buses change to either red or blue depending on what direction they are going. 
+                  All this information is provided using an API provided by the city of Boston.
+                  If you want to check out the code, here is a link to my  <a href="https://github.com/ZachariahPrice/My-Real-Time-Bus-Tracker" target="_blank" rel="noopener noreferrer">repository</a></p>
+                  <div id="map" style="width:1024px; height:768px"></div>
+              </div>
+              <div id="EME" class="tab-pane fade">
+                
+                <h3>Eye Movement Exercise</h3>
+                <p>The Eye Movement exercise was a task given during my course, 
+                  the objective was to create two eyes using HTML and what these eyes do is 
+                  follow your cursor around the screen when you move your mouse around. 
+                  To view my code for this exercise and you have a look at my <a href="https://github.com/ZachariahPrice/ZP-EyeMovementExercise.git" target="_blank" rel="noopener noreferrer">repository</a>  on my github
+                </p>
+
+                <div class="eyes">
+                  <div class="eye">
+                      <div class="ball"></div>
+                  </div>
+                  <div class="eye">
+                  <div class="ball">
+              </div>
+                  </div>
+              </div>
+                
+              </div>
+              <div id="PME" class="tab-pane fade">
+                  
+                <h3>Pacman Exercise</h3>
+                <p>What the pacman exercise is, is a lot of pacmen that bounce around the screen. On the screen there are two buttons, 
+                  add pacman and start game. The "add pacman' button, spawns more pacmen and you can spawn as many as you want. 
+                  The start button makes the pacmen move and also increases their speed. 
+                    I was not able to display the pacman exercise like the real time bus tracker and the eye movement exercise,
+                    as I ran into unknown issues and could not solve it. Here is a link to my github <a href="https://github.com/ZachariahPrice/ZachPrice-PacManExercise" target="_blank" rel="noopener noreferrer">repository</a>  to view the code and try it yourself
+                </p>
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
+          <script>
+          $(document).ready(function(){
+            $(".nav-tabs a").click(function(){
+              $(this).tab('show');
+            });
+          });
+          </script>  
+
+          <style>.container{color: white;}</style>
+
+    <style> body {background-color: #3f4146;} </style>
+    </body>
+</html>

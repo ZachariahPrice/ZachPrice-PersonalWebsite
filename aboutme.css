@@ -1,0 +1,31 @@
+
+
+
+
+
+
+.nav{
+    background-color: transparent;
+    overflow: hidden;
+    
+}
+
+.nav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px !important;
+    
+}
+
+
+
+.nav a:hover{
+    color: black;
+}
+
+.nav a.active{
+    color: #dc2f02;
+}
